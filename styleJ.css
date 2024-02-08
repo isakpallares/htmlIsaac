@@ -1,0 +1,18 @@
+td{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+table{
+    background-color:rgb(186, 198, 219);
+    border: rgb(0, 0, 0) 3px solid;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+caption{
+  font-weight: bold;
+  font-size: 30px;
+}
+
