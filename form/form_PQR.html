@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Formulario</title>
+    <title>PQR</title>
 </head>
 <body>
-    <form action="registrarDatos.py" method="post">
-        Ingrese su nombre:
+    <h2 style="text-align: center;">PQR</h2>
+    <form action="quejas.py" method="post">
+        Nombre:
         <input type="text" name="cmp_nombre" size="20">
         <br><br>
-        Ingrese su contraseña:
-        <input type="password" name="cmp_clave" size="12">
+        email:
+        <input type="text" name="cmp_clave" size="20">
         <br><br>
-        Comentarios: <br>
+        Describa su queja: <br>
         <textarea name="texta_comentarios"  cols="30" rows="5"></textarea>
         <br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
+        <input style="margin-left: 80px;" type="submit" value="Enviar">
     </form>
 </body>
 </html>
