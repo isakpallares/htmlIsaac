@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar</title>
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <fieldset>
+            <legend>Completar</legend>
+        <p>Elija un color: <input type="color"></p>
+        <p>Nombre: <input type="text" name="name" size="40"></p>
+        <p>Apellidos: <input type="text" name="last" min="1900"></p>
+        <p>Telefono: <input type="text" name="dir" min="1900"></p>
+
+        <p>
+            <input type="checkbox" name="hm" value="l"> Lengua
+            <input type="checkbox" name="hm" value="m"> Matematicas
+            <input type="checkbox" name="hm" value="h"> Historia
+            <input type="checkbox" name="hm" value="g"> Geografía
+          </p>
+        <p>Elija un fichero: <input type="file" name="nacido" min="1900"></p>
+        <textarea name="color" cols="60" rows="5" placeholder="Utilice este cuadro para escribir"></textarea>
+        <p><input type="radio" name="hm" value="m"> JPG
+        <input type="radio" name="hm" value="m"> PNG</p>
+    </fieldset>
+    <fieldset>
+        <legend>Completar</legend>
+        <p>Nombre: <input type="text" name="name" size="40"></p>
+        <p>Apellidos: <input type="text" name="last" min="1900"></p>
+        <p>Telefono: <input type="text" name="dir" min="1900"></p>
+        
+        <p>Elija una fecha: <input type="date" name="fecha" size="40"></p>
+        <select name="Tipo[]" size="3" multiple>
+            <option value="1">USB</option>
+            <option value="2">Paralelo</option>
+            <option value="3">PS2</option>
+        </select>
+    </fieldset>
+       
+    </form>
+</body>
+</html>
