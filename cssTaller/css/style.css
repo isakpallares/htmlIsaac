@@ -22,8 +22,8 @@ p strong{
     font-size: 20px;
 }
 
-div{
-    color: #060;
+.dl{
+    color: #060
 }
 
 p em{
@@ -35,4 +35,6 @@ li em{
     color: #fff;
     background-color: #000;
 }
+
+
 
