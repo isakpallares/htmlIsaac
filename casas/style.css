@@ -1,17 +1,30 @@
+body{
+    font-family:'Segoe UI';
+}
 table{
     margin:1%;
-    margin-left: 27%;
+    margin-left: 20%;
+}
+.title{
+    background-color: rgb(119, 152, 172);
 }
 td{
+    background-color: rgb(75, 107, 133);
     text-align: center;
-    border-radius: 1px;
-    border: rgb(0, 0, 0) 3px solid;
-    border-collapse: collapse;
-    margin: auto;
+    border-radius: 10px;
+    border: solid;
 }
+
+.precios{
+    font-weight: bold;
+}
+
 img{
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
+    width: 370px;
+    border-color: aliceblue;
+    border: solid;
 }
 
 .link{

@@ -1,15 +1,39 @@
-img{
-    margin:1%;
-    margin-left: 40%;
+body{
+    font-family:'Segoe UI';
 }
+
+
 img{
     border-radius: 10px;
     height: 200px;
+    border: solid;
 }
 h2{
     font-weight: bold;
     text-align: center;
+    background-color: rgb(119, 152, 172);
 }
 p{
     text-align:center;
+    font-weight: bold;
+}
+
+.c2{
+    height: 200px;
+    width: 370px;
+    margin:1%;
+    margin-left: 40%;
+}
+.c1{
+    height: 200px;
+    width: 370px;
+    margin:1%;
+    margin-left: 40%;
+}
+
+.c3{
+    height: 200px;
+    width: 370px;
+    margin:1%;
+    margin-left: 40%;
 }
