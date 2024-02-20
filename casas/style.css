@@ -1,5 +1,6 @@
 body{
     font-family:'Segoe UI';
+    background-color: rgb(207, 220, 228);
 }
 table{
     margin:1%;
@@ -7,6 +8,10 @@ table{
 }
 .title{
     background-color: rgb(119, 152, 172);
+    margin-top: -8px;
+    padding: 30px;
+    text-transform: uppercase;
+    
 }
 td{
     background-color: rgb(75, 107, 133);
@@ -25,8 +30,11 @@ img{
     width: 370px;
     border-color: aliceblue;
     border: solid;
+    transition: all 300ms;
 }
-
+img:hover{
+    transform: scale(1.04);
+}
 .link{
     font-size: 20px;
     text-decoration: none;
