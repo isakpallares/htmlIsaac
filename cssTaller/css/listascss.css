@@ -1,0 +1,22 @@
+.vacio{
+    list-style-type: none;
+}
+.circulorelleno{
+    list-style-type: disc;
+}
+
+.decimal{
+    list-style-type: decimal;
+}
+
+.romanminuscula{
+    list-style-type: lower-roman;
+}
+
+.romanmayuscula{
+    list-style-type: upper-roman;
+}
+
+.cuadrado{
+    list-style-type: square;
+}
