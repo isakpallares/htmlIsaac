@@ -32,7 +32,15 @@ header nav{
 
 header nav a:hover {
 	color:#ffffff;
-    transition: 100ms;
+    transition: 300ms;
+    border-radius: 50px;
+    border: solid;
+    border-color: #264a61;
+}
+
+header nav a:active{
+    background-color: #4283ac;
+    
 }
 
 header nav a{
@@ -50,11 +58,13 @@ hr {
     width:100px;
     border: 1px solid #2a9fea;
 }
-
+hr:hover{
+    transition: 300ms;
+    width: 200px;
+}
 .imgUser{
-    width: 100px;  
+    width: 200px;  
     display: block;
-    
 }
 .nombre{
     text-align: center;
