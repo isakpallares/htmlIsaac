@@ -28,6 +28,7 @@ header nav{
     float: right;
     line-height:100px;
     justify-content: left;
+    
 }
 
 header nav a:hover {
@@ -40,7 +41,6 @@ header nav a:hover {
 
 header nav a:active{
     background-color: #4283ac;
-    
 }
 
 header nav a{
