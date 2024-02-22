@@ -20,7 +20,7 @@ header{
     font-size: 15px;
     float: left;
     margin: 30px;
-    color: white;
+    color: #c5d7e2;
     font-size: 20px;
     font-weight: bold;
 }
@@ -28,7 +28,6 @@ header nav{
     float: right;
     line-height:100px;
     justify-content: left;
-    
 }
 
 header nav a:hover {
@@ -40,16 +39,16 @@ header nav a:hover {
 }
 
 header nav a:active{
-    background-color: #4283ac;
+    background-color: #418bb9;
 }
 
 header nav a{
     display:inline-block;
-	color: black;
+	color: #c5d7e2;
 	text-decoration:none;
 	padding:10px 20px;
 	line-height:normal;
-	font-size:15px;
+	font-size:17px;
 	font-weight:bold;
 	margin-right: 100px;
 }
@@ -79,21 +78,45 @@ hr:hover{
 .presentacion{
     text-align: center;
 }
-
+.datatitle{
+    color: #264a61;
+}
 ul{
     margin-left: 26%;
     list-style-type: none;
 }
 li{
-    align-items: center;
+    text-align: center;
     float:inline-start;
     margin-top: 5%;
     margin-left: 5%;
     
 }
+li:hover{
+    transition: 300ms;
 
+    background: hsla(221, 59%, 75%, 1);
+
+    background: linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BB2E5", endColorstr="#698CBF", GradientType=1 );
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #264a61;
+    color: aliceblue;
+}
+
+.datos{
+    position: relative;
+    left: 25px;
+}
 .business{
     text-align: center;
+    
 }
 
 .frameworks{
@@ -106,13 +129,16 @@ li{
 }
 
 .estudiosgenerales{
-    margin-left: 300px;
+    position: relative;
+    right: 160px;
 }
 
 .datoscontactos{
     text-align: center;
     margin-top: 50px;
     color: white;
+    position: relative;
+    left: 40em;
 }
 
 footer{
@@ -127,4 +153,21 @@ footer{
     text-align: center;
     padding-top: 30px;
     color: white;
+}
+
+form .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-family: 16px;
+    color: #ededed;
+    margin: 12px 0;
 }
