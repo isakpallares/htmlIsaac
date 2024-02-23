@@ -1,5 +1,5 @@
 *{
-    font-family:sans-serif;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif
 }
 body{
     margin: 0px;
@@ -112,11 +112,9 @@ li:hover{
 
 .datos{
     position: relative;
-    left: 25px;
 }
 .business{
     text-align: center;
-    
 }
 
 .frameworks{
@@ -129,16 +127,16 @@ li:hover{
 }
 
 .estudiosgenerales{
+    text-align: center;
     position: relative;
-    right: 160px;
+    right: 190px;
 }
 
 .datoscontactos{
     text-align: center;
-    margin-top: 50px;
-    color: white;
+    color: #c5d7e2;
     position: relative;
-    left: 40em;
+    top: 450px;
 }
 
 footer{
@@ -151,13 +149,16 @@ footer{
 
 .contacto{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
     color: white;
 }
 
 form .box{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left: 810px;
+    top: -50px;
 }
 
 .field .item{
@@ -170,4 +171,56 @@ form .box{
     font-family: 16px;
     color: #ededed;
     margin: 12px 0;
+}
+
+.field .item::placeholder{
+    color:#c5d7e2;
+}
+.enviar {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  position: relative;
+  left: 55px;
+}
+
+.enviar:hover,
+.enviar:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.enviar:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.enviar:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+#github{
+    position: relative;
+    left: 100px;
+    top: -100px;
 }
