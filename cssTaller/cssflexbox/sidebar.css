@@ -1,0 +1,30 @@
+*{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: sans-serif;
+}
+
+.leftbar{
+    display: flex;
+    width: 10%;
+    background-color:  rgba(123, 198, 199,0.8);
+    height: 300px;
+    align-items:first baseline;
+}
+li{
+    margin-top: 10px;
+    list-style: none;
+    padding: 8px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.rightbar{
+    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    left: 195px;
+    background-color: rgb(201, 218, 194);
+    height: 300px;
+    width: 300px;
+}

@@ -129,7 +129,7 @@ li:hover{
 .estudiosgenerales{
     text-align: center;
     position: relative;
-    right: 190px;
+    right: 180px;
 }
 
 .datoscontactos{
@@ -217,10 +217,4 @@ form .box{
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
-}
-
-#github{
-    position: relative;
-    left: 100px;
-    top: -100px;
 }
