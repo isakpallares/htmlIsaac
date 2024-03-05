@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        let nombre;
+        let nota;
+        document.write("<h1> Nota en valor entero </h1>")
+        nombre= prompt("Ingrese nombre: ");
+        nota = parseInt(prompt("Ingrese la nota: "));
+        if(nota>= 4){
+            document.write(nombre + " estas aprobado con una nota de: "+nota)
+        }
+        document.write("<h1> Nota en valor decimal </h1>")
+        nota = parseFloat(prompt("Ingrese la nota con decimales: "));
+        if(nota>= 3.5){
+            document.write(nombre + " estas aprobado con una nota de: "+nota)
+        }
+    </script>
+    
+</body>
+</html>

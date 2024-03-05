@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        let nota1, nota2, nota3, pro;
+        nota1 = parseInt(prompt("Ingrese 1ra Nota: "))
+        nota2 = parseInt(prompt("Ingrese 2da Nota: "))
+        nota3 = parseInt(prompt("Ingrese 3ra Nota: "))
+        pro = (nota1 + nota2 + nota3)/3
+        if (pro>= 7){
+            document.write("Promocionado");
+        } else {
+            if(pro>= 4 && pro < 7){
+                document.write("regular");
+            }else{
+                if(pro <=3.9 || pro >2){
+                    document.write("Reprobado");    
+                } else{
+                    document.write("Cancela matricula"); 
+                }
+               
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>

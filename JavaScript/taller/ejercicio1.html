@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        let alumno1, alumno2, alumno3, alumno4;
+        let mayores = 0;
+        let menores = 0;
+        
+        while(true){
+            alumno1 = parseInt(prompt("Ingrese la nota del primer alumno: "));
+            alumno2 = parseInt(prompt("Ingrese la nota del segundo alumno: "));
+            alumno3 = parseInt(prompt("Ingrese la nota del tercer alumno: "));
+            alumno4 = parseInt(prompt("Ingrese la nota del cuarto alumno: "));
+            if(alumno1 >= 6){
+                mayores+= 1;
+            } else{
+                menores+= 1
+            }
+            if(alumno2 >= 6){
+                mayores+= 1;
+            } else{
+                menores+= 1
+            }
+            if(alumno3 >= 6){
+                mayores+= 1;
+            } else{
+                menores+= 1
+            }
+            if(alumno4 >= 6){
+                mayores+= 1;
+            } else{
+                menores+= 1
+            }
+            document.write("La cantidad de alumnos con notas mayores a 6 son: "+mayores );
+            document.write("<br>");
+            document.write("La cantidad de alumnos con notas menores a 6 son: "+ menores);
+            break;
+        }
+    </script>
+</body>
+</html>

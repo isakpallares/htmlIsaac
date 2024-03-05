@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        let valor;
+        do{
+            valor = parseInt(prompt("Ingrese un valor: "));
+            document.write("El valor " + valor + " tiene");
+            
+            if(valor <10){
+                document.write(" 1 digito")
+                document.write("<br>")
+            } else{
+                if(valor<100){
+                    document.write("2 digitos");
+                    document.write("<br>")
+                } else{
+                    document.write(" más de dos digitos")
+                    document.write("<br>")
+                }
+            }
+        } while(valor!=0);
+        
+    </script>
+</body>
+</html>
