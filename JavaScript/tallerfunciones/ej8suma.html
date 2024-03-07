@@ -13,8 +13,8 @@
 
 <script>
 function sumarDigitos() {
-    var numero = parseInt(document.getElementById("inputNumber").value);
-    var suma = 0;
+    let numero = parseInt(document.getElementById("inputNumber").value);
+    let suma = 0;
     while (numero > 0) {
         suma += numero % 10;
         numero = Math.floor(numero / 10);

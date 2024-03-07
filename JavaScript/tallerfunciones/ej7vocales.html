@@ -13,8 +13,8 @@
 
 <script>
 function eliminarVocales() {
-    var texto = document.getElementById("inputText").value;
-    var textoSinVocales = texto.replace(/[aeiouAEIOU]/g, '');
+    let texto = document.getElementById("inputText").value;
+    let textoSinVocales = texto.replace(/[aeiouAEIOU]/g, '');
     document.getElementById("resultado").textContent = "Cadena sin vocales: " + textoSinVocales;
 }
 </script>

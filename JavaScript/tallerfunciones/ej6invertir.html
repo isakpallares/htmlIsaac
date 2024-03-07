@@ -13,9 +13,9 @@
 
 <script>
 function invertirPalabras() {
-    var texto = document.getElementById("inputText").value;
-    var palabras = texto.split(/\s+/);
-    var palabrasInvertidas = palabras.reverse().join(" ");
+    let texto = document.getElementById("inputText").value;
+    let palabras = texto.split(/\s+/);
+    let palabrasInvertidas = palabras.reverse().join(" ");
     document.getElementById("resultado").textContent = "Palabras invertidas: " + palabrasInvertidas;
 }
 </script>
