@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invertir Palabras</title>
+</head>
+<body>
+<h1>Invertir Palabras</h1>
+<input type="text" id="inputText" placeholder="Introduce una cadena de texto">
+<button onclick="invertirPalabras()">Invertir palabras</button>
+<p id="resultado"></p>
+
+<script>
+function invertirPalabras() {
+    var texto = document.getElementById("inputText").value;
+    var palabras = texto.split(/\s+/);
+    var palabrasInvertidas = palabras.reverse().join(" ");
+    document.getElementById("resultado").textContent = "Palabras invertidas: " + palabrasInvertidas;
+}
+</script>
+</body>
+</html>

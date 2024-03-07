@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suma de Dígitos</title>
+</head>
+<body>
+<h1>Suma de Dígitos</h1>
+<input type="number" id="inputNumber" placeholder="Introduce un número entero">
+<button onclick="sumarDigitos()">Sumar dígitos</button>
+<p id="resultado"></p>
+
+<script>
+function sumarDigitos() {
+    var numero = parseInt(document.getElementById("inputNumber").value);
+    var suma = 0;
+    while (numero > 0) {
+        suma += numero % 10;
+        numero = Math.floor(numero / 10);
+    }
+    document.getElementById("resultado").textContent = "La suma de los dígitos es: " + suma;
+}
+</script>
+</body>
+</html>

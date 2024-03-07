@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar Vocales</title>
+</head>
+<body>
+<h1>Eliminar Vocales</h1>
+<input type="text" id="inputText" placeholder="Introduce una cadena de texto">
+<button onclick="eliminarVocales()">Eliminar vocales</button>
+<p id="resultado"></p>
+
+<script>
+function eliminarVocales() {
+    var texto = document.getElementById("inputText").value;
+    var textoSinVocales = texto.replace(/[aeiouAEIOU]/g, '');
+    document.getElementById("resultado").textContent = "Cadena sin vocales: " + textoSinVocales;
+}
+</script>
+</body>
+</html>
