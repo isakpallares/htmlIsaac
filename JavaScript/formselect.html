@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p><select name="" id="selectorColor" onchange="mostrarValores()">
+            <option value="ff0000">Rojo</option>
+            <option value="00ff00">Verde</option>
+            <option value="0000fff">Azul</option>
+        </select></p>
+        <p>Numero de indice seleccionado: <input type="text" id="cmpNumero"></p>
+        <p>Texto seleccionado: <input type="text" id="cmpTexto"></p>
+        <p>Valor seleccionado: <input type="text" id="cmpValor"></p>
+    </form>
+    <script>
+        function mostrarValores(){
+            let selector = document.getElementById("selectorColor");
+            let indice = selector.selectedIndex;
+            document.getElementById("cmpNumero").value=selector.selectedIndex;
+            document.getElementById("cmpTexto").value=selector.options[indice].text;
+            document.getElementById("cmpValor").value=selector.options[indice].value;
+            
+        }
+    </script>
+</body>
+</html>

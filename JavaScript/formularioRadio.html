@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="radio" id="opcion1" name="estudios">Sin estudios
+        <br>
+        <input type="radio" id="opcion2" name="estudios">Primarios
+        <br>
+        <input type="radio" id="opcion3" name="estudios">Secundarios
+        <br>
+        <input type="radio" id="opcion4" name="estudios">Universitarios
+        <br>
+        <input type="button" value="Mostrar" onclick="mostrarSeleccion()">
+    </form>
+
+    <script>
+        function mostrarSeleccion(){
+            if(document.getElementById("opcion1").checked){
+                alert("Seleccionaste la opcion Sin Estudios")
+            }
+            if(document.getElementById("opcion2").checked){
+                alert("Seleccionaste la opcion Primarios")
+            }
+        
+            if(document.getElementById("opcion3").checked){
+                alert("Seleccionaste la opcion Secundarios")
+            }
+        
+        
+            if(document.getElementById("opcion4").checked){
+                alert("Seleccionaste la opcion universitarios")
+            }
+        }
+    </script>
+</body>
+</html>
