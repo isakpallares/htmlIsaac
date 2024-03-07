@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calcular Área de Triángulo</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
 <p id="resultado"></p>
 
 <script>
+
 function calcularArea() {
     let base = parseFloat(document.getElementById('base').value);
     let altura = parseFloat(document.getElementById('altura').value);
@@ -32,11 +34,7 @@ function calcularArea() {
     alert("Por favor ingresa valores válidos para la base y la altura.");
     return;
   }
-  
-  
   let area = (base * altura) / 2;
-  
-  
   document.getElementById('resultado').innerText = "El área del triángulo es: " + area.toFixed(2);
 }
 </script>
