@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <script src="js/ej3.js"></script>
+</head>
+<body>
+    <script>
+        let cuenta = new CuentaBancaria("Luisa",1200);
+        document.write("Nombre del cliente: "+cuenta.titular+"<br>")
+        document.write("Saldo del cliente: "+cuenta.saldo+"<br>")
+        cuenta.depositar(200);
+        document.write("Saldo del cliente: "+cuenta.saldo+"<br>")
+        cuenta.retirar(1000);
+        cuenta.obtenerSaldo();
+    </script>
+</body>
+</html>

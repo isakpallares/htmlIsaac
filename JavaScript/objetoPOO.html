@@ -11,6 +11,10 @@
         let cliente1 = new Cliente("Luisa",1200);
         document.write("Nombre del cliente: "+cliente1.nombre+"<br>")
         document.write("Saldo del cliente: "+cliente1.saldo+"<br>")
+        cliente1.depositar(200);
+        document.write("Saldo del cliente: "+cliente1.saldo+"<br>")
+        cliente1.retirar(1000);
+        document.write("Saldo del cliente: "+cliente1.saldo+"<br>")
     </script>
 </body>
 </html>
