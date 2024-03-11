@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumar(v1,v2){
+            return v1+v2;
+        }
+        function restar(v1,v2){
+            return v1-v2;
+        }
+        function multiplicar(v1,v2){
+            return v1*v2;
+        }
+    
+        function calcular(x,y,fu){
+            let resul = fu(x,y)
+            return resul;
+        }
+        let s1 = calcular(10,5,sumar)
+        document.write(s1+"<br>")
+        
+        let s2 = calcular(10,5,restar)
+        document.write(s2+"<br>")
+        let s3 = calcular(10,5,multiplicar)
+        document.write(s3+"<br>")
+    </script>
+</body>
+</html>

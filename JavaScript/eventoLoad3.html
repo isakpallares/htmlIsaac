@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="validar()" id="formulario1">
+        Usuario:
+        <input type="text" name="usuario" id="usuario" size="20" style="margin: 10px;"><br>
+        Clave: 
+        <input type="password" name="clave" id="clave" size="20" style="margin: 10px;"><br>
+        <input type="submit" value="Enviar" name="enviar" id="enviar" style="margin-left:110px">
+        
+    </form>
+    <script>
+        window.addEventListener("DomContentLoader",inicio)
+        
+        
+        window.onload=inicio;
+        function inicio(){
+            document.getElementById("formulario1").onsubmit=validar;
+        }
+        
+        function validar(){
+            let usu = document.getElementById("usuario").value;
+            let cla = document.getElementById("clave").value;
+            
+        }
+    </script>
+</body>
+</html>

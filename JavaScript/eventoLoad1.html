@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="validar()" id="formulario1">
+        Usuario:
+        <input type="text" name="usuario" id="usuario" size="20" style="margin: 10px;"><br>
+        Clave: 
+        <input type="password" name="clave" id="clave" size="20" style="margin: 10px;"><br>
+        <input type="submit" value="Enviar" name="enviar" id="enviar" style="margin-left:110px">
+        
+    </form>
+    <script>
+        function validar(){
+            let usu = document.getElementById("usuario").value;
+            let cla = document.getElementById("clave").value;
+            if(usu.length==0 || clave.length == 0){
+                alert("El usuario o la clave están vacías")
+                return false;
+            } else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
