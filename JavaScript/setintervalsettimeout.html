@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cronometro{
+            font-size: 50px;
+            color: #0a0;
+            
+        }
+    </style>
+</head>
+<body>
+    <span id="cronometro">0
+    </span>
+    <br>
+    <input type="button" value="Detener" id="botonDetener">
+    <script>
+        let reloj = setInterval(procesar,1000);
+        document.getElementById("botonDetener").addEventListener("click",presionarBoton)
+        function procesar(){
+            let valor = parseInt(document.getElementById("cronometro").innerHTML);
+            valor++;
+            document.getElementById("cronometro").innerHTML=valor;
+        }
+        function presionarBoton(){
+            if(document.getElementById("botonDetener").value == "Detener"){
+                clearInterval(reloj);
+                document.getElementById("botonDetener").value = "Continuar";
+            }else{
+                reloj = setInterval(procesar,1000);
+                document.getElementById("botonDetener").value="Detener"
+            }
+        }
+        
+    </script>
+</body>
+</html>

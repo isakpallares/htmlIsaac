@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        addEventListener("DOMContentLoaded", inicio);
+        
+        function inicio(){
+            document.getElementById("cuadro1").addEventListener("click",presionclic);
+            document.getElementById("cuadro2").addEventListener("dblclick",presiondblclic);
+        }
+        function presionclic(){
+            alert("Se hizo click")
+        }
+        function presiondblclic(){
+            alert("Se hizo doble click")
+        }
+            
+    </script>
+    
+    <div style="width: 200px;height: 200px; background: #ffff00;" id="cuadro1">
+        prueba evento clic
+    </div>
+    <div style="width: 200px;height: 200px; background: #ffbb00;" id="cuadro2">
+        prueba evento doble clic
+    </div>
+</body>
+</html>

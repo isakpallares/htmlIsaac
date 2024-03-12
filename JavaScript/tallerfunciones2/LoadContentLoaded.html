@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus odit, voluptatem sapiente eum sit eius quia, optio vero nam fugiat architecto eos sunt unde illo. Libero enim cum magni fugiat.</p>
+        
+    </div>
+    <script>
+        document.addEventListener("DomContentLoader",contentLoaded)
+        window.addEventListener("load",inicio);
+        function inicio(){
+                alert("La pagina se ha cargado correctamente")
+        }
+        function contentLoaded(){
+            alert("La pagina se ha cargado nuevamente")
+            alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+        }
+    </script>
+    
+    <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0">
+    
+</body>
+</html>

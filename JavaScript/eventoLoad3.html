@@ -17,16 +17,13 @@
     <script>
         window.addEventListener("DomContentLoader",inicio)
         
-        
-        window.onload=inicio;
+        window.addEventListener(load,inicio)
         function inicio(){
             document.getElementById("formulario1").onsubmit=validar;
         }
-        
         function validar(){
             let usu = document.getElementById("usuario").value;
             let cla = document.getElementById("clave").value;
-            
         }
     </script>
 </body>

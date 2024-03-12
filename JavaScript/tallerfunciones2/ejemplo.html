@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", ready);
+        // no "document.onDOMContentLoaded = ..."
+        function ready() {
+          alert('DOM is ready');
+          // la imagen aún no está cargada (a menos que se haya almacenado en caché), por lo que el tamaño es 0x0
+          alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+        }
+      
+        document.addEventListener("DOMContentLoaded", ready);
+      </script>
+      
+      <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiplicar(x,y){
+            return x*y;
+        }
+        function operacionMatematica(x,y,opera){
+            function sumar(x,y){
+                return x+y;
+            }
+            function restar(x,y){
+                return x-y;
+            }
+            document.write("La suma es: "+sumar(x,y)+"<br>")
+            document.write("La resta es: "+restar(x,y)+"<br>")
+            document.write("La multiplicacion es: "+opera(x,y))
+        }
+        operacionMatematica(20,10,multiplicar);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument</title>
+</head>
+<body>
+    <form action="procesar.py" method="post" id="formulario1">
+        ingrese clave: 
+        <input type="password" name="clave1" id="clave1" size="20" required>
+        <br>
+        repita la clave: 
+        <input type="password" name="clave2" id="clave2" size="20" required>
+        <br>
+        <input type="submit" value="Confirmar" name="confirmar" id="confirmar" >
+    </form>
+    <script>
+        document.getElementById("formulario1").addEventListener("submit",validar);
+        function validar(){
+            let cla1 = document.getElementById("clave1").value;
+            let cla2 = document.getElementById("clave1").value;
+            if(cla1 != cla2){
+                alert("Las claves son distintas");
+                event.preventDefault();
+            } else{
+                if(cla1.lenght < 5 || cla2.lenght < 5){
+                    alert("Las claves son menores a cinco caracteres")
+                    event.preventDefault();
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
