@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generarLista(vec,tipo="<ul>"){
+            let lista = tipo;
+            for(let index = 0; index < vec.length; index++){
+                lista+= `<li>${vec[index]}</li>`;
+            }
+            tipo=="<ul>"?lista+="</ul>":lista+="</ol>";
+            return lista;
+        }
+        const frutas = ["Pera","Mango","Manzana"];
+        document.write(generarLista(frutas),"<ol>");
+        document.write("<br>");
+        document.write(generarLista(frutas))
+    </script>
+</body>
+</html>

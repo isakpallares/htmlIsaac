@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aumentar = (a) => {
+            return a + 100;
+        }
+        document.write(aumentar(1))
+        document.write("<br>")
+        //Simplificando un poco más: quitamos corchetes y return
+        let aumentar2 = (a) => a + 100
+        
+        document.write(aumentar(1)) 
+        //Si parametros es un solo parametro se quitan parentesis
+        let aumentar3 = a => a + 100
+        
+        document.write(aumentar(1))
+    </script>
+</body>
+</html>
