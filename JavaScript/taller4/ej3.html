@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Usuarios</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    td.age {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<table id="usuarios">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Correo Electrónico</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Isaac Pallares</td>
+            <td class="edad">19</td>
+            <td>ias@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Wendy Smith</td>
+            <td class="edad">20</td>
+            <td>wendywendo@hotmail.com</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<script>
+    
+    var celdasEdad = document.querySelectorAll('#usuarios tbody td.edad');
+
+    
+    for (let celda of celdasEdad) {
+        celda.addEventListener('dblclick', function() {
+            
+            var usuarios = [
+                { nombre: "Isaac Pallares", edad: 19, correo: "ias@gmail.com" },
+                { nombre: "Wendy Smith", edad: 20, correo: "wendywendo@hotmail.com" }
+                
+            ];
+
+                
+            var edadesUsuarios = usuarios.map(function(usuario) {
+                return usuario.edad;    
+            });
+
+    
+            alert("Edades de los usuarios: " + edadesUsuarios.join(', '));
+        });
+    }
+</script>
+
+</body>
+</html>

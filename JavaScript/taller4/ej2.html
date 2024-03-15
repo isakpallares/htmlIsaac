@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        var productos = [
+            { nombre: "Producto 1", precio: 10, cantidad: 2 },
+            { nombre: "Producto 2", precio: 20, cantidad: 3 },
+            { nombre: "Producto 3", precio: 15, cantidad: 1 }
+        ];
+
+        
+        for (let producto of productos) {
+            var valoresTotales = productos.map(function(p) {
+                return producto.precio * producto.cantidad;
+            });
+
+            document.write(producto.nombre + ': ' + valoresTotales[0]+ "<br>");
+        }
+
+        
+    </script>
+</body>
+</html>

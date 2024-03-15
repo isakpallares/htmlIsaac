@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón y Párrafo</title>
+<style>
+    #parrafo {
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+<button id="boton">Haz clic aquí</button>
+<p id="parrafo">Este es un párrafo de ejemplo.</p>
+
+<script>
+    var boton = document.querySelector('#boton');
+    boton.addEventListener('click', function() {
+        
+        var parrafo = document.querySelector('#parrafo');
+        
+        parrafo.textContent = 'El contenido del párrafo ha sido cambiado';
+    });
+</script>
+
+</body>
+</html>
