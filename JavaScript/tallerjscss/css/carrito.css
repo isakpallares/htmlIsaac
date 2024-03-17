@@ -1,0 +1,96 @@
+body{
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+.titulo {
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+}
+form {
+    background-color: #93c99f;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+    margin-left: 41.5%;
+    border: solid #5f8167;
+    text-align: center;
+}
+
+#totalProductos{
+    border: 1px solid #5f8167;
+    padding: 8px;
+    text-align: left;
+    background-color: #93c99f;
+    font-weight: bold;
+}
+
+
+.boton{
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+label{
+    font-weight: bold;  
+
+}
+select{
+    border-radius: 10px;
+    border: solid #85a58c;
+    background-color: #5f8167;
+    color: white;
+    font-weight: bold;  
+}
+input{
+    border-radius: 10px;
+    border: solid #7d9783;
+    background-color: #bdd4c3;
+}
+.boton:hover {
+  background-color: rgb(249,250,251);
+}
+
+.boton:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.boton:focus-visible {
+  box-shadow: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #d4e4d8;
+}
+th, td {
+    border: 1px solid #5f8167;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #93c99f;
+}

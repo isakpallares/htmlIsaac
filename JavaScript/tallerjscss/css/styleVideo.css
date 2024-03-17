@@ -1,0 +1,22 @@
+body{
+    background-image: url("cielo-estrellado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.big-number{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito de Compras</title>
+<link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+
+<h2 class="titulo">Carrito de Compras</h2>
+
+<form id="formaCarta">
+  <label for="nombreProducto">Nombre del Producto:</label>
+  <select id="nombreProducto" name="nombreProducto">
+    <option value="Producto 1">SPIKE Essential</option>
+    <option value="Producto 2">SPIKE Prime</option>
+    <option value="Producto 3">BricQ Motion Prime</option>
+    <option value="Producto 4">BricQ Motion Essential</option>
+    <option value="Producto 5">Coding Express</option>
+  </select><br><br>
+  
+  <label for="precioProducto">Precio del Producto:</label>
+  <input type="number" id="precioProducto" name="precioProducto" value="356.96" required disabled><br><br>
+  
+  <label for="cantidad">Cantidad:</label><br>
+  <input type="number" id="cantidad" name="cantidad" min="1" value="1" required><br><br>
+  
+  <button type="submit" class="boton">Agregar al Carrito</button>
+</form>
+
+<br><br>
+
+<table id="tablaCarrito">
+  <tr>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+    <th>Total</th>
+    <th>Modificar</th>
+    <th>Eliminar</th>
+  </tr>
+  <tfoot>
+    <tr>
+      <td colspan="3">Total</td>
+      <td id="totalProductos">$0.00</td>
+      <td colspan="2">
+        <button onclick="confirmarCompra()" class="boton">Realizar Compra</button>
+      </td>
+      
+    </tr>
+  </tfoot>
+</table>
+<div id="editarContenedorForm" style="display: none;">
+  <h3  class="titulo">Modificar Producto</h3>
+  <form id="editarForm">
+    <input type="hidden" id="editarIndice" name="editarIndice">
+    <label for="editnombreProducto">Nombre del Producto:</label>
+    <select id="editnombreProducto" name="editnombreProducto" disabled>
+      <option value="Producto 1">SPIKE Essential</option>
+      <option value="Producto 2">SPIKE Prime</option>
+      <option value="Producto 3">BricQ Motion Prime</option>
+      <option value="Producto 4">BricQ Motion Essential</option>
+      <option value="Producto 5">Coding Express</option>
+    </select><br><br>
+    <label for="editprecioProducto">Precio del Producto:</label>
+    <input type="number" id="editprecioProducto" name="editprecioProducto" step="0.01" required disabled><br><br>
+    <label for="editcantidad">Cantidad:</label><br>
+    <input type="number" id="editcantidad" name="editcantidad" min="1" required><br><br>
+    <button type="submit" class="boton">Guardar Cambios</button>
+    <button type="button" class="boton" onclick="cancelEdit()">Cancelar</button>
+  </form>
+  
+</div>
+
+<script src="js/carrito.js"></script>
+</body>
+</html>
