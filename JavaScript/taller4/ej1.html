@@ -5,8 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Botón y Párrafo</title>
 <style>
+    *{
+        font-family: verdana;
+    }
     #parrafo {
         font-size: 18px;
+    }
+    #boton{
+        background-color: #6181a5;
+        color: white;
+        size: 10px;
     }
 </style>
 </head>
@@ -18,10 +26,8 @@
 <script>
     var boton = document.querySelector('#boton');
     boton.addEventListener('click', function() {
-        
         var parrafo = document.querySelector('#parrafo');
-        
-        parrafo.textContent = 'El contenido del párrafo ha sido cambiado';
+        parrafo.textContent = 'El contenido del párrafo ha sido modificado';
     });
 </script>
 
