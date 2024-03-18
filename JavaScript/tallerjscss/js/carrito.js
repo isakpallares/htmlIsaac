@@ -7,27 +7,27 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
       case "Producto 1":
         precioProducto = 356.95;
         modificarImg = document.getElementById("imagenMuestra");
-        modificarImg.innerHTML = '<img src="./spike-essential.jpg" id="imgProduct" alt=""></img>';
+        modificarImg.innerHTML = '<img src="img/spike-essential.jpg" id="imgProduct" alt=""></img>';
         break;
       case "Producto 2":
         precioProducto = 471.90;
         modificarImg = document.getElementById("imagenMuestra");
-        modificarImg.innerHTML = '<img src="./prime.gif" id="imgProduct" alt=""></img>';
+        modificarImg.innerHTML = '<img src="img/prime.gif" id="imgProduct" alt=""></img>';
         break;
       case "Producto 3":
         precioProducto = 163.35;
         modificarImg = document.getElementById("imagenMuestra");
-        modificarImg.innerHTML = '<img src="./BricQPrime.webp" id="imgProduct" alt=""></img>';
+        modificarImg.innerHTML = '<img src="img/BricQPrime.webp" id="imgProduct" alt=""></img>';
         break;
       case "Producto 4":
         precioProducto = 163.35;
         modificarImg = document.getElementById("imagenMuestra");
-        modificarImg.innerHTML = '<img src="./BricQEssential.webp" id="imgProduct" alt=""></img>';
+        modificarImg.innerHTML = '<img src="img/BricQEssential.webp" id="imgProduct" alt=""></img>';
         break;
       case "Producto 5":
         precioProducto = 326.70;
         modificarImg = document.getElementById("imagenMuestra");
-        modificarImg.innerHTML = '<img src="./coding-express.jpg" id="imgProduct" alt=""></img>';
+        modificarImg.innerHTML = '<img src="img/coding-express.jpg" id="imgProduct" alt=""></img>';
         break;
       default:
         precioProducto = 0;
