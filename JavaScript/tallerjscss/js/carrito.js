@@ -1,31 +1,41 @@
 document.getElementById("nombreProducto").addEventListener("change", function() {
     let productoSeleccionado = this.value;
     let precioProducto = 0;
-    
+    let modificarImg = document.getElementById("imagenMuestra");
     // Definir precios predeterminados para cada producto
     switch(productoSeleccionado) {
       case "Producto 1":
         precioProducto = 356.95;
+        modificarImg = document.getElementById("imagenMuestra");
+        modificarImg.innerHTML = '<img src="./spike-essential.jpg" id="imgProduct" alt=""></img>';
         break;
       case "Producto 2":
         precioProducto = 471.90;
+        modificarImg = document.getElementById("imagenMuestra");
+        modificarImg.innerHTML = '<img src="./prime.gif" id="imgProduct" alt=""></img>';
         break;
       case "Producto 3":
         precioProducto = 163.35;
+        modificarImg = document.getElementById("imagenMuestra");
+        modificarImg.innerHTML = '<img src="./BricQPrime.webp" id="imgProduct" alt=""></img>';
         break;
       case "Producto 4":
         precioProducto = 163.35;
+        modificarImg = document.getElementById("imagenMuestra");
+        modificarImg.innerHTML = '<img src="./BricQEssential.webp" id="imgProduct" alt=""></img>';
         break;
       case "Producto 5":
         precioProducto = 326.70;
+        modificarImg = document.getElementById("imagenMuestra");
+        modificarImg.innerHTML = '<img src="./coding-express.jpg" id="imgProduct" alt=""></img>';
         break;
       default:
         precioProducto = 0;
+  
     }
-    
     document.getElementById("precioProducto").value = precioProducto.toFixed(2);
   });
-
+  
   document.getElementById("formaCarta").addEventListener("submit", function(event) {
     event.preventDefault();
     
@@ -46,17 +56,19 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
     cell2.innerHTML = "$" + precioProducto.toFixed(2);
     cell3.innerHTML = cantidad;
     cell4.innerHTML = "$" + total.toFixed(2);
+    carro = [1];
     cell5.innerHTML = "<button class='boton' onclick='editItem(this)'>Modificar</button>";
     cell6.innerHTML = "<button class='boton' onclick='removeItem(this)'>Eliminar</button>";
     updateTotal();
     document.getElementById("formaCarta").reset();
+    
   });
 
   function editItem(button) {
     let row = button.parentNode.parentNode;
     let cells = row.getElementsByTagName("td");
     let nombreProducto = cells[0].innerHTML;
-    let precioProducto = parseFloat(cells[1].innerHTML.substring(1)); // Remove "$" before parsing
+    let precioProducto = parseFloat(cells[1].innerHTML.substring(1));
     let cantidad = parseInt(cells[2].innerHTML);
 
     document.getElementById("editarIndice").value = row.rowIndex;
@@ -72,7 +84,6 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
 
   document.getElementById("editarForm").addEventListener("submit", function(event) {
     event.preventDefault();
-
     let rowIndex = document.getElementById("editarIndice").value;
     let nombreProducto = document.getElementById("editnombreProducto").value;
     let precioProducto = parseFloat(document.getElementById("editprecioProducto").value);
@@ -94,6 +105,7 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
   function removeItem(button) {
     let row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
+    carro = [];
     updateTotal();
   }
   function updateTotal() {
@@ -106,5 +118,13 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
   }
 
   function confirmarCompra() {
-    alert("¡Compra realizada con éxito!");
+    
+    
+      let pregunta = confirm("¿Quiere realizar la compra?")
+    if (pregunta) {
+      alert("¡Compra realizada con éxito!");
+    } else {
+      alert("Se ha cancelado la compra.")
+    }
+    
   }

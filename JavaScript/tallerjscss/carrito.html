@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carrito de Compras</title>
 <link rel="stylesheet" href="css/carrito.css">
+<link rel="shortcut icon" href="lego.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -23,10 +24,11 @@
   <label for="precioProducto">Precio del Producto:</label>
   <input type="number" id="precioProducto" name="precioProducto" value="356.96" required disabled><br><br>
   
-  <label for="cantidad">Cantidad:</label><br>
+  <label for="cantidad">Cantidad:</label>
   <input type="number" id="cantidad" name="cantidad" min="1" value="1" required><br><br>
   
   <button type="submit" class="boton">Agregar al Carrito</button>
+  <div id="imagenMuestra"><img src="./spike-essential.jpg" id="imgProduct" alt=""></img></div>
 </form>
 
 <br><br>
@@ -47,7 +49,6 @@
       <td colspan="2">
         <button onclick="confirmarCompra()" class="boton">Realizar Compra</button>
       </td>
-      
     </tr>
   </tfoot>
 </table>
@@ -65,7 +66,7 @@
     </select><br><br>
     <label for="editprecioProducto">Precio del Producto:</label>
     <input type="number" id="editprecioProducto" name="editprecioProducto" step="0.01" required disabled><br><br>
-    <label for="editcantidad">Cantidad:</label><br>
+    <label for="editcantidad">Cantidad:</label>
     <input type="number" id="editcantidad" name="editcantidad" min="1" required><br><br>
     <button type="submit" class="boton">Guardar Cambios</button>
     <button type="button" class="boton" onclick="cancelEdit()">Cancelar</button>
