@@ -1,6 +1,6 @@
 import './App.css'
 
-function App() {
+function ComponenteJSX() {
     const siglo = 21;
     const persona = {
         nombre: "Juan",
@@ -44,4 +44,4 @@ function App() {
     )
 }
 
-export default App
+export default ComponenteJSX;
