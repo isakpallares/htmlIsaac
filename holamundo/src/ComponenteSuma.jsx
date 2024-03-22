@@ -12,7 +12,6 @@ function ComponenteSuma() {
     }
     const presionSuma = (e)=>{
         e.preventDefault();
-        
         const suma = parseFloat(num1) + parseFloat(num2);
         alert("La suma es: "+suma);
     }
