@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-</head>
-<body>
-    <script>
-    
-    </script>
-</body>
-</html>
+<div>
+    <h2>Lista de Tareas</h2>
+    <form onSubmit={(e) => { e.preventDefault(); }}>
+      <input
+        type="text"
+        value={nuevaTarea}
+        onChange={(e) => setNuevaTarea(e.target.value)}
+        placeholder="Agregar nueva tarea"
+      />
+      <button type="button" onClick={handleAgregarTarea}>Agregar</button>
+    </form>
+    <ul>
+      {tareas.map((tarea, index) => (
+        <li key={index}>
+          {tarea}
+          <button onClick={() => handleEliminarTarea(index)}>Eliminar</button>
+        </li>
+      ))}
+    </ul>
+  </div>

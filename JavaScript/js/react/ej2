@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+
+function RegistroAsistencia() {
+  const [nombre, setNombre] = useState('');
+  const [asistencia, setAsistencia] = useState('');
+
+  const handleNombreChange = (event) => {
+    setNombre(event.target.value);
+  };
+
+  const handleAsistenciaChange = (event) => {
+    setAsistencia(event.target.value);
+  };
+
+  return (
+    <div>
+      <h2>Registro de Asistencia</h2>
+      <form>
+        <div>
+          <label htmlFor="nombre">Nombre del estudiante:</label>
+          <input
+            type="text"
+            id="nombre"
+            value={nombre}
+            onChange={handleNombreChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="asistencia">Estado de asistencia:</label>
+          <select
+            id="asistencia"
+            value={asistencia}
+            onChange={handleAsistenciaChange}
+          >
+            <option value="">Seleccionar estado</option>
+            <option value="presente">Presente</option>
+            <option value="ausente">Ausente</option>
+          </select>
+        </div>
+      </form>
+      <div>
+        <h3>Datos ingresados:</h3>
+        <p>Nombre: {nombre}</p>
+        <p>Estado de asistencia: {asistencia}</p>
+      </div>
+    </div>
+  );
+}
+
+export default RegistroAsistencia;
