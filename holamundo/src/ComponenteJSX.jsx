@@ -1,4 +1,4 @@
-import './App.css'
+
 
 function ComponenteJSX() {
     const siglo = 21;

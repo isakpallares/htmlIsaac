@@ -1,4 +1,4 @@
-import './App.css'
+
 
 function ComponenteSuma() {
     let num1 = "";

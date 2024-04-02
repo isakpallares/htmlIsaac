@@ -1,0 +1,45 @@
+*{
+    font-family: Verdana;
+}
+form{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-49%, -49%);
+    border: solid;
+    border-radius: 2px;
+    padding: 10px;
+    padding-bottom: 300px;
+}
+ul{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-49%, -49%);
+    list-style-type:circle;
+    
+}
+h2{
+    text-align: center;
+}
+input{
+    margin: 10px;
+}
+li{
+    margin-bottom: 10px;
+}
+
+button {
+  padding: 5px;
+  font: bold 0.8em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+button:hover,
+button:focus {
+  background: #000;
+  color: #fff;
+}

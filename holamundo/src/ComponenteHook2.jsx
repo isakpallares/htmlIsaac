@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'
+
 
 function ComponenteHook2(){
     const[color,setColor] = useState("red")
