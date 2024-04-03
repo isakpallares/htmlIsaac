@@ -1,16 +1,7 @@
 *{
     font-family: Verdana;
 }
-form{
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-49%, -49%);
-    border: solid;
-    border-radius: 2px;
-    padding: 10px;
-    padding-bottom: 300px;
-}
+
 #estudiante{
     position: absolute;
     left: 50%;

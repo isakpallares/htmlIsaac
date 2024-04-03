@@ -12,9 +12,11 @@ import ComponenteHook3 from './ComponenteHook3.jsx'
 import AppDado from './ComponenteDadoApp.jsx'
 import DadoAppBoton from './ComponenteDadoBoton.jsx'
 import OperacionesApp from './ComponenteOperaciones.jsx'
+import Counter from './video/Counter.jsx'
+import Text from './video/Text.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Ej1/>
+    <Text/>
   </React.StrictMode>,
 )
