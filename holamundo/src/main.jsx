@@ -1,22 +1,23 @@
 import React from 'react'
+import "./main.css"
+import {BrowserRouter,Route, Routes} from "react-router-dom"
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import ComponenteSuma from './ComponenteSuma.jsx'
-import ComponenteHooks from './ComponenteHooks.jsx'
-import ComponenteHook2 from './ComponenteHook2.jsx'
-import Ej1 from './Ej1.jsx'
-import RegistroAsistencia from './RegistroAsistencia.jsx'
-import ListaDeTareas from './ListaDeTareas.jsx'
-import ComponenteHook3 from './ComponenteHook3.jsx'
-import AppDado from './ComponenteDadoApp.jsx'
-import DadoAppBoton from './ComponenteDadoBoton.jsx'
-import OperacionesApp from './ComponenteOperaciones.jsx'
-import Counter from './video/Counter.jsx'
-import Text from './video/Text.jsx'
-
+import Pokemon from './videoLearning/components/Pokemon'
+import PokemonList from './videoLearning/components/PokemonList'
+import Navbar from './proyectoVideo/components/Navbar'
+import ItemListContainer from './proyectoVideo/components/ItemListContainer'
+import ItemDetailContainer from './proyectoVideo/components/ItemDetailContainer'
+import Nosotros from './proyectoVideo/components/Nosotros'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Text/>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path="/productos/:categoria" element={<ItemListContainer />} />
+        <Route path="/nosotros" element={<Nosotros/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )

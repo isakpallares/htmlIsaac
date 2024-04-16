@@ -31,11 +31,9 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
         break;
       default:
         precioProducto = 0;
-  
     }
     document.getElementById("precioProducto").value = precioProducto.toFixed(2);
   });
-  
   document.getElementById("formaCarta").addEventListener("submit", function(event) {
     event.preventDefault();
     
@@ -61,23 +59,19 @@ document.getElementById("nombreProducto").addEventListener("change", function() 
     cell6.innerHTML = "<button class='boton' onclick='removeItem(this)'>Eliminar</button>";
     updateTotal();
     document.getElementById("formaCarta").reset();
-    
   });
-
   function editItem(button) {
     let row = button.parentNode.parentNode;
     let cells = row.getElementsByTagName("td");
     let nombreProducto = cells[0].innerHTML;
     let precioProducto = parseFloat(cells[1].innerHTML.substring(1));
     let cantidad = parseInt(cells[2].innerHTML);
-
     document.getElementById("editarIndice").value = row.rowIndex;
     document.getElementById("editnombreProducto").value = nombreProducto;
     document.getElementById("editprecioProducto").value = precioProducto;
     document.getElementById("editcantidad").value = cantidad;
     document.getElementById("editarContenedorForm").style.display = "block";
   }
-
   function cancelEdit() {
     document.getElementById("editarContenedorForm").style.display = "none";
   }
