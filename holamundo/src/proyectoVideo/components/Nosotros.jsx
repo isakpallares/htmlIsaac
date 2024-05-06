@@ -19,7 +19,7 @@ const Nosotros = () =>{
     return(
         <div className="container">
             <h1 className="main-title">Nosotros</h1>
-            <p>Este es </p>
+            <p>Esto somos nosotros, muy pronto.</p>
         </div>
         
     )

@@ -8,7 +8,7 @@ import { db } from "../../firebase/config"
 const ItemListContainer = () => {
     //Aquí se traen los datos de data.json, manejar la logica y setear su estado
     const [productos,setProductos] = useState([])
-    const [titulo,setTitulo] = useState("Prod uctos");
+    const [titulo,setTitulo] = useState("Productos");
     const categoria = useParams().categoria;
     useEffect(() => {
     //referencia a la base de datos
