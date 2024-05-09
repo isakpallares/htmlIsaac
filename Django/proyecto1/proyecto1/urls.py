@@ -17,6 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from proyecto1.views import saludo, despedida, dame_fecha, saludopersonal, calcula_edad, calcula_edad_futura, saludo_personalizado, perfil_usuario, calcular_hipotenusa, mayor_edad
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludo/', saludo),
+    path('despedida/',despedida),
+    path('fecha/',dame_fecha),    
+    path('saludopersonal/<int:numero>/', saludopersonal),
+    path('edades/<int:anio>/', calcula_edad),
+    path('edadesfutura/<int:edad_actual>/<int:anio>/',calcula_edad_futura),
+    path('saludopersonalizado/<str:nombre>/',saludo_personalizado),
+    path('perfilusuario/<str:usuario>/<str:seccion>/',perfil_usuario),
+    path('calcularhipotenusa/<int:lado_a>/<int:lado_b>/',calcular_hipotenusa),
+    path('mayoredad/<int:edad>/',mayor_edad),
 ]
