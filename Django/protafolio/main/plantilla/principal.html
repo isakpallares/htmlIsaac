@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            font-family: studiofeixen-variable, studiofeixen, Arial, Helvetica, sans-serif;
-        }
-        html{
-            background-color: #f3f2f9;
-            color: #606887;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
+    <title>inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    {% include 'superior/barra.html' %}
-    <h1>{{saludo}}</h1>
-    
+    <img src="back.jpg" id="img">
+    <div class="princ">
+        
+        <h3>Bienvenido a mi Portafolio</h3>
+        <p>Aquí podrás saber un poco de mi, lo que hago y el cómo ayudaré en su empresa.</p>
+    </div>
+    <header>
+        <a href="principal.html" class="logo">Isaac</a>
+            <ul>
+                <li><a href="principal.html" class="active">Inicio</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+    </header>
 </body>
 </html>
