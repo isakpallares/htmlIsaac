@@ -31,5 +31,8 @@ urlpatterns = [
     path("salarioempleado/<str:empleado>/<int:horas>/<int:valor_hora>/<int:impuesto>/", salario_empleado),
     path('mayoredad/<int:edad>/',mayor_edad),
     path('saludoplantilla/', saludo_plantilla_clase ),
-    path('plantilladatos/', plantilla_datos )
+    path('plantilladatos/', plantilla_datos ),
+    path('saludoplantillaloader/', saludo_plantilla_loader),
+    path("scrum/", scrum),
+    path("algoritmos/", algoritmos)
 ]

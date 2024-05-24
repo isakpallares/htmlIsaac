@@ -1,13 +1,30 @@
 from django.http import HttpResponse
-from django.template import Template, Context
+from django.template import Template, Context, loader
 import datetime
 import math
+from django.shortcuts import render
 class Persona:
     def __init__(self, nombre, apellido, edad):
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
-        
+def saludo_plantilla_loader(request):
+    p1 = Persona("Juan Fernando", "Galan",28)
+    fecha_actual = datetime.datetime.now()
+    
+    materias = ["Algoritmos", "Base de Datos", "Java","Python"]
+    # materias = []
+    doc_externo = loader.get_template('miplantilla.html')
+    contexto = {
+    "nombre_profesor":p1.nombre,
+    "edad" : p1.edad,
+    "fecha" : fecha_actual,
+    "materias" : materias,
+    }
+    documento = doc_externo.render(contexto)
+    return HttpResponse(documento)
+    
+    
 def saludo_plantilla_clase(request):
     p1 = Persona("Juan Fernando", "Galan",28)
     fecha_actual = datetime.datetime.now()
@@ -15,7 +32,6 @@ def saludo_plantilla_clase(request):
     materias = ["Algoritmos", "Base de Datos", "Java","Python"]
     materias = []
     aulas = ["Robles","Blanco","Turpial","Bolivar"]
-    
     doc_externo = open("D:/ADSO-8/desarrolloWeb/Django/proyecto1/proyecto1/plantilla/miplantilla.html",)
     nombre ="Omar"
     plantilla = Template(doc_externo.read())  
@@ -38,10 +54,18 @@ def plantilla_datos(request):
     contexto = Context()
     documento = plantilla.render(contexto)
     return HttpResponse(documento)
-    
+
 def saludo(request):
     documento="<html><body><h1> Primera página de Django </h1></body></html>"
     return HttpResponse(documento)
+def algoritmos(request):
+    fecha_actual=datetime.datetime.now()
+    return render(request, "algoritmos.html",{"obtener_fecha":fecha_actual})
+
+def scrum(request):
+    fecha_actual=datetime.datetime.now()
+    return render(request, "scrum.html",{"obtener_fecha":fecha_actual})
+
 def despedida(request):
     return HttpResponse("Hasta Luego Adso 8 Django")
 #Vista para mostrar fecha y hora
