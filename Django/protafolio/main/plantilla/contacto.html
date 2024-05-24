@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static './css/style.css' %}">
 </head>
 <body>
-    <img src="back.png" id="img">
+    <img src="{% static './img/back.png' %}" id="img">
     <div class="princ">
         <form action="">
             <h2>Contactame</h2>
@@ -20,11 +20,11 @@
         </form>
     </div>
     <header>
-        <a href="principal.html" class="logo">Pallares</a>
+        <a href="{% url 'principal' %}" class="logo">Pallares</a>
             <ul>
-                <li><a href="principal.html" class="active">Inicio</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
             </ul>
     </header>
 </body>

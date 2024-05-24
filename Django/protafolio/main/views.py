@@ -11,3 +11,9 @@ def principal(request):
         'descripcion' : desc
     }
     return HttpResponse(template.render(context,request))
+    
+def portfolio(request):
+    return render(request,'portfolio.html')
+    
+def contacto(request):
+    return render(request,'contacto.html')

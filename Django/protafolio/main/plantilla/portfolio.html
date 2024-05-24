@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
-    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/portafolio.css' %}">
 </head>
 <body>
     <section>
-    <img src="back.png" id="img">
+        <img src="{% static './img/back.png' %}" id="img">
     </section>
     <header>
-        <a href="principal.html" class="logo">Pallares</a>
+        <a href="{% url 'principal' %}" class="logo">Pallares</a>
             <ol>
-                
-                <li><a href="principal.html" class="active">Inicio</a></li>
+                <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
                 <li><a href="#">Portafolio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
             </ol>
     </header>
     <div>
