@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-ho^xpt_+psu__f#j3v=z&#!eh*l#v72@x6(3#zq7fgz*9mszv_
 DEBUG = True
 
 ALLOWED_HOSTS = []
+STATICFILES_DIRS = ['D:/ADSO-8/desarrolloWeb/Django/protafolio/main/plantilla/static']
 
 
 # Application definition

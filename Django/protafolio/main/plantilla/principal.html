@@ -1,25 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            font-family: studiofeixen-variable, studiofeixen, Arial, Helvetica, sans-serif;
-        }
-        html{
-            background-color: #f3f2f9;
-            color: #606887;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
+    <title>inicio</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    
 </head>
 <body>
-    {% include 'superior/barra.html' %}
-    <h1>{{saludo}}</h1>
-    
+    <img src="{% static './img/back.png' %}" id="img">
+    <div class="princ">
+        <h3>{{inicio}}</h3>
+        <p>{{descripcion}}</p>
+    </div>
+    <header>
+        <a href="principal.html" class="logo">Isaac</a>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+    </header>
 </body>
 </html>
