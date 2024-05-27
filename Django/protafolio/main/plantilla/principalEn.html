@@ -15,7 +15,7 @@
         <p>{{descripcion}}</p>
     </div>
     <header>
-        <a href="{% url 'principal' %}" class="logo">Isaac</a>
+        <a href="{% url 'principalEn' %}" class="logo">Isaac</a>
         <div id="flags" class="flags">
             <div class="flags__item" data-language="en">
                 <a href="{% url 'principalEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
@@ -25,10 +25,11 @@
             </div>
         </div>
             <ul>
-                <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
-                <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
-                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'principalEn' %}" class="active">Main</a></li>
+                <li><a href="{% url 'portfolioEn' %}">Portfolio</a></li>
+                <li><a href="{% url 'contactoEn' %}">Contacts</a></li>
             </ul>
     </header>
+
 </body>
 </html>

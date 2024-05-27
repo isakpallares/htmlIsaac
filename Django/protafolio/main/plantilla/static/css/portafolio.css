@@ -14,7 +14,7 @@ body{
     background: #1c0522;
     
 }
-img{
+#img{
     position: relative;
     top: 0;
     left: 0;
@@ -60,11 +60,22 @@ header ol li a:hover{
     color: #2b1055;
     transition: 100ms;
 }
+.flags{
+    width: 75px;
+    display: flex;
+    margin-left: 180px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.flags__item{
+    width: 30px;
+}
 
-div {
+#btn {
     position: absolute;
     top: 30%;
-    left: 760px;
+    left: 690px;
     text-align: center;
     color: #fff;
     font-weight: 700;

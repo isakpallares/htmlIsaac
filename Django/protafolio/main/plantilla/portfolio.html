@@ -13,14 +13,22 @@
     </section>
     <header>
         <a href="{% url 'principal' %}" class="logo">Pallares</a>
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="en">
+                <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+            </div>
+            <div class="flags__item" data-language="es">
+                <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+            </div>
+        </div>
             <ol>
                 <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
                 <li><a href="#">Portafolio</a></li>
                 <li><a href="{% url 'contacto' %}">Contacto</a></li>
             </ol>
     </header>
-    <div>
-        <a href="#sobre" id="btn">explore</a>
+    <div class="btn">
+        <a href="#sobre" id="btn">explora</a>
     </div>
     <section class="sec" id="sobre">
         <h2>Sobre mí</h2>

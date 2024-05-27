@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>contact</title>
     <link rel="stylesheet" href="{% static './css/style.css' %}">
 </head>
 <body>
     <img src="{% static './img/back.png' %}" id="img">
     <header>
-        <a href="{% url 'principal' %}" class="logo">Pallares</a>
+        <a href="{% url 'principalEn' %}" class="logo">Pallares</a>
         <div id="flags" class="flags">
             <div class="flags__item" data-language="en">
                 <a href="{% url 'contactoEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
@@ -20,22 +20,22 @@
             </div>
         </div>
             <ul>
-                <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
-                <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
-                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'principalEn' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'portfolioEn' %}">Portafolio</a></li>
+                <li><a href="{% url 'contactoEn' %}">Contacto</a></li>
             </ul>
     </header>
     <div class="princ">
         <form action="">
-            <h2>Mis redes</h2>
+            <h2>My links</h2>
             <a href="https://github.com/isakpallares" target="_blank"><img id="git" src="{% static './img/github.png' %}" alt=""></a>
             <a href="https://www.linkedin.com/in/isaac-david-pallares-maldonado-8b714b310/" target="_blank"><img id="linkedin" src="{% static './img/linkedin.png' %}" alt=""></a><br>
-            <h2>Contactame</h2>
-            <input type="text" id="name" placeholder="Tu nombre" required>
-            <input type="emain" id="email" placeholder="email" required>
-            <input type="phone" id="phone" placeholder="telefono" required>
+            <h2>Contact me</h2>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="emain" id="email" placeholder="Email" required>
+            <input type="phone" id="phone" placeholder="Phone" required>
             
-            <button type="submit">Enviar</button>
+            <button type="submit">Send</button>
         </form>
     </div>
     

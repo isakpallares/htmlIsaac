@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="{% static './css/portafolio.css' %}">
+</head>
+<body>
+    <img src="{% static './img/back.png' %}" id="img">
+    <header>
+        <a href="{% url 'principalEn' %}" class="logo">Pallares</a>
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="en">
+                <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+            </div>
+            <div class="flags__item" data-language="es">
+                <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+            </div>
+        </div>
+            <ol>
+                <li><a href="{% url 'principalEn' %}" class="active">Inicio</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="{% url 'contactoEn' %}">Contacto</a></li>
+            </ol>
+    </header>
+    <div>
+        <a href="#sobre" id="btn">explore</a>
+    </div>
+    <section class="sec" id="sobre">
+        <h2>About me</h2>
+        <p>I am Isaac David Pallares Maldonado, a 19-year-old with a deep passion for programming and software development. Throughout my journey, I have acquired knowledge in a variety of languages and technologies that allow me to approach development projects with confidence and creativity. My proficiency in JavaScript and the React framework enables me to create interactive and dynamic user interfaces, while my experience with Spring Boot equips me to develop robust and efficient backend applications in Java. Additionally, my skill in Python broadens my versatility and allows me to work on a variety of projects.<br> My passion for technology drives me to constantly learn and improve my skills. Despite my youth, I have achieved a deep understanding of programming principles and application development, making me a valuable asset to any development team. With a proactive attitude and a creative mind, I am ready to face new challenges and contribute significantly to the world of software development.</p>
+        <h2>Education and Courses</h2>
+        <p>
+            <ul>
+            <li>Technician in Systems
+                SENA
+                Barranquilla-Atlántico.
+                2021</li><br>
+            <li>English level - B2
+                CENTRO CULTURAL COLOMBO AMERICANO.
+                Barranquilla-Atlántico</li><br>
+            <li>Technologist in Software Analysis and Development.
+                SENA
+                Barranquilla-Atlántico.
+                En formación.
+                2023
+            </li><br>
+            </ul>
+    </p>
+    </section>
+
+</body>
+</html>

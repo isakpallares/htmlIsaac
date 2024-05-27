@@ -10,7 +10,7 @@ body{
     min-height: 100vh;
     background: #1c0522;
 }
-img{
+#img, #git, #linkedin{
     position: absolute;
     top: 0;
     left: 0;
@@ -57,11 +57,22 @@ header ul li a:hover
     color: #2b1055;
     transition: 100ms;
 }
+.flags{
+    width: 75px;
+    display: flex;
+    margin-left: 230px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.flags__item{
+    width: 30px;
+}
 
 .princ {
     position: absolute;
     top: 30%;
-    left: 760px;
+    left: 720px;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -82,6 +93,7 @@ form{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
+
 }
 form h2{
     color: #555;
@@ -113,4 +125,19 @@ form button:hover{
     background-color: #2b1055;
     transition:100ms;
 }
-
+#linkedin{
+    width: 10px;
+    height: 10px;
+}
+#linkedin{
+    width: 30px;
+    height: 30px;
+    margin-left: 120px;
+    top: 80px;
+}
+#git{
+    width: 30px;
+    height: 30px;
+    margin-left: 200px;
+    top: 80px;
+}
