@@ -10,21 +10,21 @@
 </head>
 <body>
     <img src="{% static './img/back.png' %}" id="img">
-    <div class="princ">
+    <div class="intro">
         <h3>{{inicio}}</h3>
-        <p>{{descripcion}}</p>
+        <p id="introduction">Soy Isaac David Pallares Maldonado, un joven de 19 años con una profunda pasión por la programación y el desarrollo de software. A lo largo de mi trayectoria, he adquirido conocimientos en una variedad de lenguajes y tecnologías que me permiten abordar proyectos de desarrollo con confianza y creatividad.</p>
     </div>
     <header>
         <a href="{% url 'principal' %}" class="logo">Isaac</a>
-        <div id="flags" class="flags">
-            <div class="flags__item" data-language="en">
-                <a href="{% url 'principalEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
-            </div>
-            <div class="flags__item" data-language="es">
-                <a href="{% url 'principal' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
-            </div>
-        </div>
             <ul>
+                <div id="flags" class="flags">
+                    <div class="flags__item" data-language="en">
+                        <a href="{% url 'principalEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+                    </div>
+                    <div class="flags__item" data-language="es">
+                        <a href="{% url 'principal' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+                    </div>
+                </div>
                 <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
                 <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
                 <li><a href="{% url 'contacto' %}">Contacto</a></li>

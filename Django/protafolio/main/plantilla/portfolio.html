@@ -13,15 +13,16 @@
     </section>
     <header>
         <a href="{% url 'principal' %}" class="logo">Pallares</a>
-        <div id="flags" class="flags">
-            <div class="flags__item" data-language="en">
-                <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
-            </div>
-            <div class="flags__item" data-language="es">
-                <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
-            </div>
-        </div>
+        
             <ol>
+                <div id="flags" class="flags">
+                    <div class="flags__item" data-language="en">
+                        <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+                    </div>
+                    <div class="flags__item" data-language="es">
+                        <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+                    </div>
+                </div>
                 <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
                 <li><a href="#">Portafolio</a></li>
                 <li><a href="{% url 'contacto' %}">Contacto</a></li>
@@ -32,7 +33,7 @@
     </div>
     <section class="sec" id="sobre">
         <h2>Sobre mí</h2>
-        <p>Soy Isaac David Pallares Maldonado, un joven de 19 años con una profunda pasión por la programación y el desarrollo de software. A lo largo de mi trayectoria, he adquirido conocimientos en una variedad de lenguajes y tecnologías que me permiten abordar proyectos de desarrollo con confianza y creatividad. Mi dominio de JavaScript y el framework React me permite crear interfaces de usuario interactivas y dinámicas, mientras que mi experiencia con Spring Boot me capacita para desarrollar aplicaciones backend robustas y eficientes en Java. Además, mi habilidad en Python amplía mi versatilidad y me permite trabajar en una variedad de proyectos.<br> Mi pasión por la tecnología me impulsa a aprender constantemente y a mejorar mis habilidades. A pesar de mi juventud, he logrado una comprensión profunda de los principios de la programación y el desarrollo de aplicaciones, lo que me convierte en un recurso valioso para cualquier equipo de desarrollo. Con una actitud proactiva y una mente creativa, estoy listo para enfrentar nuevos desafíos y contribuir significativamente en el mundo del desarrollo de software.</p>
+        
         <h2>Formación y cursos</h2>
         <p>
             <ul>
