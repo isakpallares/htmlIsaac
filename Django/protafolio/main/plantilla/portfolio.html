@@ -32,8 +32,27 @@
         <a href="#sobre" id="btn">explora</a>
     </div>
     <section class="sec" id="sobre">
-        <h2>Sobre mí</h2>
-        
+        <h2>Mis proyectos</h2>
+            <table class="projects">
+                <thead>
+                  <tr class="titles">
+                    <th scope="col">CARRITO INVENTARIO</th>
+                    <th scope="col">AEROPUERTO GUI</th>
+                    <th scope="col">BIBLIOTECA CRUD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> <a href="https://github.com/isakpallares/htmlIsaac/tree/main/holamundo"><img class="imgprojects" src="{% static './img/carrito.png' %}" ></a></td>
+                    <td class="backimg"><img class="imgaero" src="{% static './img/aero.png' %}" ></td>
+                    <td class="backimg"><img class="imgbiblio" src="{% static './img/biblioteca.png' %}" ></td>
+                  </tr>
+                  <tr class="projectsDesc">
+                    <td>inventario de un carrito de compras hecho con react</td>
+                    <td>GUI de aeropuerto realizado con java, te permite manejar tanto pasajeto como los vuelos</td>
+                    <td>CRUD con python, permite manejar una biblioteca y su inventario</td>
+                  </tr>
+                </table>
         <h2>Formación y cursos</h2>
         <p>
             <ul>

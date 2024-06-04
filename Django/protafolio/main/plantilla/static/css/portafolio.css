@@ -119,3 +119,41 @@ div #btn:hover{
     color: white;
     background: #1c0522;
 }
+.projects{
+    color: #ffffff;
+    justify-content: space-between;
+}  
+
+
+.titles{
+    background-color: #fff;
+    font-size: 30px;
+    color: #2b1055;
+    
+}
+
+.projectsDesc{
+    text-align: center;
+    
+}
+
+.imgprojects{
+    width: 100%;
+    height: 100%;    
+}
+.backimg:hover{
+    transition: 200ms;
+    background-color: #fff;
+}
+
+.imgaero{
+    width: 400px;
+    height: 300px;
+    margin-left: 110px;
+}
+
+.imgbiblio{
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+}

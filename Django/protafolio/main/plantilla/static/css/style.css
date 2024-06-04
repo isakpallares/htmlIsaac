@@ -83,7 +83,7 @@ header ul li a:hover
 .intro{
     position: absolute;
     top: 30%;
-    left: 35%;
+    left: 33%;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -93,7 +93,7 @@ header ul li a:hover
 }
 #introduction{
     position: absolute;
-    left: -6%;
+    left: -50%;
 }
 h3{
     font-size: 40px;
