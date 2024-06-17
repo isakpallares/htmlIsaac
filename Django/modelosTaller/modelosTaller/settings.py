@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'modelosTaller.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': ''
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'modelosestudiantes',
+        'USER': 'root',
+        'PASSWORD': 's3n42023*',
+        'HOST': 'localhost',
+        'PORT' : '',
     }
 }
 
