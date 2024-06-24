@@ -4,7 +4,7 @@ from django.db import models
 
 class Category(models.Model):
     nombre = models.CharField(max_length=200)
-    descripcion = models.TextField(blank=True, null=True)
+    descripcion = models.CharField(blank=True, null=True, max_length=50)
     def __str__(self):
         return self.nombre
 class Product(models.Model):
