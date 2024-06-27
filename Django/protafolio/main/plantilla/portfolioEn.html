@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="{% static './css/portafolio.css' %}">
+</head>
+<body>
+    <img src="{% static './img/back.png' %}" id="img">
+    <header>
+        <a href="{% url 'principalEn' %}" class="logo">Pallares</a>
+            <ol>
+                <div id="flags" class="flags">
+                    <div class="flags__item" data-language="en">
+                        <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+                    </div>
+                    <div class="flags__item" data-language="es">
+                        <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+                    </div>
+                </div>
+                <li><a href="{% url 'principalEn' %}" class="active">Inicio</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="{% url 'contactoEn' %}">Contacto</a></li>
+            </ol>
+    </header>
+    <div>
+        <a href="#sobre" id="btn">explore</a>
+    </div>
+    <section class="sec" id="sobre">
+        <h2>About me</h2>
+        <table class="projects">
+            <thead>
+              <tr class="titles">
+                <th scope="col">INVENTORY CART</th>
+                <th scope="col">GUI AIRPORT</th>
+                <th scope="col">CRUD LIBRARY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img class="imgprojects" src="{% static './img/carrito.png' %}" ></td>
+                <td class="backimg"><img class="imgaero" src="{% static './img/aero.png' %}" ></td>
+                <td class="backimg"><img class="imgbiblio" src="{% static './img/biblioteca.png' %}" ></td>
+              </tr>
+              <tr class="projectsDesc">
+                <td>
+                    inventory of a shopping cart made with react</td>
+                <td>Airport GUI made with Java, allows you to manage both passengers and flights</td>
+                <td>CRUD with python, allows you to manage a library and its inventory</td>
+              </tr>
+            </table>
+        <h2>Education and Courses</h2>
+        <p>
+            <ul>
+            <li>Technician in Systems
+                SENA
+                Barranquilla-Atlántico.
+                2021</li><br>
+            <li>English level - B2
+                CENTRO CULTURAL COLOMBO AMERICANO.
+                Barranquilla-Atlántico</li><br>
+            <li>Technologist in Software Analysis and Development.
+                SENA
+                Barranquilla-Atlántico.
+                On Formation.
+                2023-2025
+            </li><br>
+            </ul>
+    </p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio</title>
+    <link rel="stylesheet" href="{% static './css/portafolio.css' %}">
+</head>
+<body>
+    <section>
+        <img src="{% static './img/back.png' %}" id="img">
+    </section>
+    <header>
+        <a href="{% url 'principal' %}" class="logo">Pallares</a>
+        
+            <ol>
+                <div id="flags" class="flags">
+                    <div class="flags__item" data-language="en">
+                        <a href="{% url 'portfolioEn' %}"><img src="{% static './img/us.svg' %}" alt=""></a>
+                    </div>
+                    <div class="flags__item" data-language="es">
+                        <a href="{% url 'portfolio' %}"><img src="{% static './img/co.svg' %}" alt=""></a>
+                    </div>
+                </div>
+                <li><a href="{% url 'principal' %}" class="active">Inicio</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            </ol>
+    </header>
+    <div class="btn">
+        <a href="#sobre" id="btn">explora</a>
+    </div>
+    <section class="sec" id="sobre">
+        <h2>Mis proyectos</h2>
+            <table class="projects">
+                <thead>
+                  <tr class="titles">
+                    <th scope="col">CARRITO INVENTARIO</th>
+                    <th scope="col">AEROPUERTO GUI</th>
+                    <th scope="col">BIBLIOTECA CRUD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="https://github.com/isakpallares/htmlIsaac/tree/main/holamundo"><img class="imgprojects" src="{% static './img/carrito.png' %}" ></a></td>
+                    <td class="backimg"> <a href="https://github.com/isakpallares/htmlIsaac/tree/main/aeropuertogui"><img class="imgaero" src="{% static './img/aero.png' %}" ></a></td>
+                    <td class="backimg"> <a href="https://github.com/isakpallares/htmlIsaac/tree/main/libreriaInterfaz"><img class="imgbiblio" src="{% static './img/biblioteca.png' %}" ></a></td>
+                  </tr>
+                  <tr class="projectsDesc">
+                    <td>inventario de un carrito de compras hecho con react</td>
+                    <td>GUI de aeropuerto realizado con java, te permite manejar tanto pasajeto como los vuelos</td>
+                    <td>CRUD con python, permite manejar una biblioteca y su inventario</td>
+                  </tr>
+                </table>
+        <h2>Formación y cursos</h2>
+        <p>
+            <ul>
+            <li>Técnico en sistemas
+                SENA
+                Barranquilla-Atlántico.
+                2021</li><br>
+            <li>Ingles B2
+                CENTRO CULTURAL COLOMBO AMERICANO.
+                Barranquilla-Atlántico</li><br>
+            <li>Tecnólogo en Análisis y desarrollo de software.
+                SENA
+                Barranquilla-Atlántico.
+                En formación.
+                2023
+            </li><br>
+            </ul>
+    </p>
+    </section>
+    
+    
+</body>
+</html>
