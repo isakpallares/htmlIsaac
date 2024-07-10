@@ -18,7 +18,7 @@ class CustomerAdmin(admin.ModelAdmin):
     search_fields=('nombre','telefono')
     list_filter=('nombre',) 
 class OrderAdmin(admin.ModelAdmin):
-    list_display=("customer", "fecha_pedido",'completado','id_transaccion')
+    list_display=("customer", "fecha_pedido",'id_transaccion')
     search_fields=('customer','id_transaccion')
     list_filter=('id_transaccion',) 
     

@@ -54,6 +54,14 @@ MIDDLEWARE = [
       'django.middleware.common.CommonMiddleware',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORGINS=[
+    'http://localhost:3000',
+
+]
+
+
 ROOT_URLCONF = 'modelosTaller.urls'
 
 TEMPLATES = [
@@ -85,7 +93,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'Isaac271204',
         'HOST': 'localhost',
-        'PORT' : '',
+        'PORT' : '3306',
     }
 }
 
